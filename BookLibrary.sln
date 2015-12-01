@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.MVC", "BookLibrary.MVC\BookLibrary.MVC.csproj", "{43220198-D00F-485E-B24E-27FDF0AA2EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.Model", "BookLibrary.Model\BookLibrary.Model.csproj", "{2ECBE136-1BA9-4813-8494-BE91255BD8B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.Data", "BookLibrary.Data\BookLibrary.Data.csproj", "{FEFF68F0-BB12-44AC-A498-D29638466CE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43220198-D00F-485E-B24E-27FDF0AA2EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43220198-D00F-485E-B24E-27FDF0AA2EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43220198-D00F-485E-B24E-27FDF0AA2EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43220198-D00F-485E-B24E-27FDF0AA2EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECBE136-1BA9-4813-8494-BE91255BD8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECBE136-1BA9-4813-8494-BE91255BD8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECBE136-1BA9-4813-8494-BE91255BD8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECBE136-1BA9-4813-8494-BE91255BD8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEFF68F0-BB12-44AC-A498-D29638466CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEFF68F0-BB12-44AC-A498-D29638466CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEFF68F0-BB12-44AC-A498-D29638466CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEFF68F0-BB12-44AC-A498-D29638466CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
