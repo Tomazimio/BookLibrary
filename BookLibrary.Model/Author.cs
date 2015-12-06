@@ -2,11 +2,13 @@
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+
     public class Author
     {
         private ICollection<Book> books;
 
-        public Author() {
+        public Author()
+        {
             this.books = new HashSet<Book>();
         }
 

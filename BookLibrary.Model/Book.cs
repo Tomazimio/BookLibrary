@@ -6,13 +6,11 @@
 
     public class Book
     {
-        private ICollection<Author> autors;
-        private ICollection<Genre> genres;
+        private ICollection<Author> authors;
 
-
-        public Book() {
-            this.autors = new HashSet<Author>();
-            this.genres = new HashSet<Genre>();
+        public Book()
+        {
+            this.authors = new HashSet<Author>();
         }
 
         public int BookId { get; set; }
@@ -24,10 +22,6 @@
 
         public DateTime ReleaseDate { get; set; }
 
-        public int AuthorId { get; set; }
-
-        public int GenreId { get; set; }
-
         [Required]
         [MinLength(1)]
         [MaxLength(500)]
@@ -35,15 +29,12 @@
 
         public virtual ICollection<Author> Autors
         {
-            get { return this.autors; }
-            set { this.autors = value; }
+            get { return this.authors; }
+            set { this.authors = value; }
         }
 
-        public virtual ICollection<Genre> Genres
-        {
-            get { return this.genres; }
-            set { this.genres = value; }
-        }
+        public int GenreId { get; set; }
 
+        public virtual Genre Genre { get; set; }
     }
 }

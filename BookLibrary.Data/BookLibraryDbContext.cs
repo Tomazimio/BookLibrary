@@ -1,22 +1,18 @@
-﻿using BookLibrary.Model;
-using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookLibrary.Data
+﻿namespace BookLibrary.Data
 {
-    public class BookLibraryDbContext : IdentityDbContext<User>
+    using Model;
+    using Migrations;
+    using Microsoft.AspNet.Identity.EntityFramework;
+    using System.Data.Entity;
+    using Repository;
+
+    public class BookLibraryDbContext : IdentityDbContext<User>, IBookLibraryDbContext
     {
         public BookLibraryDbContext()
             : base("DefaultConnection")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<BookLibraryDbContext, Configuration>());
         }
-
-        //public virtual IDbSet<User> Users { get; set; }
 
         public virtual IDbSet<Book> Books { get; set; }
 
@@ -24,5 +20,14 @@ namespace BookLibrary.Data
 
         public virtual IDbSet<Genre> Genres { get; set; }
 
+        public new void SaveChanges()
+        {
+            base.SaveChanges();
+        }
+
+        public DbSet<TEntity> Set<TEntity>() where TEntity : class
+        {
+            return base.Set<TEntity>();
+        }
     }
 }
